@@ -6,7 +6,10 @@ export const Register = async (req, res) => {
     await userModel.create(req.body);
     res
       .status(201)
-      .json({ title: "Success", message: "Registration Complete" });
+      .json({
+        title: "Registration Complete",
+        message: "Thank you for registering. See you there",
+      });
   } catch (error) {
     ErrorHandler(error, res);
   }
