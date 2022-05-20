@@ -6,7 +6,7 @@ import request from "request";
 export const Register = async (req, res) => {
   try {
     const data = {
-      to: "2348131065776",
+      to: req.body.phone,
       from: "RCCGTMP",
       sms: "Thank you for registering for the Couple's night, slated for 28th May, 2022 by 4:00pm at THE VUE Restuarant Novare Central Mall, Wuse Zone 5 Abuja",
       type: "plain",
